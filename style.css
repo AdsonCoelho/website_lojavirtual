@@ -2,7 +2,7 @@
 *{
 	margin: 0;
 	padding: 0;
-/*	background-color: hotpink;*/
+	background-color: #de987e;
 }
 
 a{
@@ -17,10 +17,10 @@ a{
   /*Menu: Início/Produtos/Sobre/Contatos/Carrinho*/
 }
 .menu a{
-	color: rgb(240, 142, 202);
+	color: rgb(255, 255, 255);
 	padding-right: 14px;
-  border:3px solid rgb(252, 194, 107) ;
-	font-size: 32px;
+  border:3px solid rgb(58, 52, 43) ;
+	font-size: 36px;
 	margin:0 10px;
 	font-family: cursive;
 }
@@ -29,10 +29,10 @@ a{
 #area
 {
   position:relative;
-  left:10%;
-  top:10em;
-  width:320px;
-  height:250px;
+  left:30%;
+  top:5em;
+  width:350px;
+  height:350px;
   background-color:rgb(128, 68, 0);
 }
 
@@ -44,7 +44,7 @@ a{
   background-color:#ffffff;
 }
 
-/**Área do fild set, todo o fundo do fale conosco e Nome e Email.**/
+/**Área do field set, todo o fundo do fale conosco e Nome e Email.**/
 fieldset
 {
   width:445px;
@@ -67,7 +67,6 @@ legend
   left:8px;
   margin-right:6px;
   background-color:#ffffff; 
-
 }
 
 /***Campos Nome e Email***/
@@ -106,9 +105,26 @@ legend
   background-color:#ffffff;
 }
 
-.img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+/*Imagem do rodapé*/
+
+.img_rodape
+{
+  position:relative;
+  left:25em;
+  top:20em;
+  width:100px;
+  border:3px solid rgb(58, 52, 43) ;
+
 }
 
+/** estilo para Div1 para a página sobre**/
+
+#div1{
+  position:relative;
+  font-size: 16px;
+  left:3%;
+  top:3em;
+  width:90%;
+  height:150px;
+  border:1px solid rgb(58, 52, 43) ;
+}
