@@ -7,21 +7,33 @@
  		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 		
-	
+	<SCRIPT LANGUAGE="JavaScript">
+		function Login(){
+		var done=0;
+		var username=document.login.username.value;
+		username=username.toLowerCase();
+		var password=document.login.password.value;
+		password=password.toLowerCase();
+		if (username=="admin" && password=="12345") { window.location="vendas.html"; done=1; }
+		if (username=="teste" && password=="teste") { window.location="vendas.html"; done=1; }
+		if (done==0) { alert("Senha ou Usuário inválido."); }
+		}
+		
+		</SCRIPT>
 	
 		<body class="body">
 		<header class="cabecalho">
 			<!-- <img class="img_cabecalho" src="logo.png" alt="A e J Modas"/>-->
 			<nav class="cabecalho_menu">
 				<div class="menu">
-					<a class="" href="index.html">Início</a>
+					<a class="" href="index.html">Página inicial</a>
 					<a class="" href="produtos.html">Produtos</a>
 					<a class="" href="sobre.html">Sobre</a>
-					<a class="" href="contatos.html">Contatos</a>
 					<a class="" href="carrinho.html">Carrinho</a>			
 				</div>
 			</nav>
 		</header>
+
 		<main class="conteudo">
 			<section class="ctd_principal">
 				<div class="ctd_princ_escrito">
@@ -30,21 +42,20 @@
 						conferir nossas dicas de modas e muito mais...
 						você pode conferir entrando em um dos nossos grupos de whatsapp,
 						facebook ou instagram!!!
-						
 					</h3>
 										
 					<form class="login" method="post" name="login">
-						
 						<div class="campos_login">
 							<h1><i class="label_login"></i> Login</h1>
 							<label>
-								<input type="text" class="campos" placeholder="E-mail" name="email">
+								<input  class="campos" type="text" placeholder="Nome de usuário" name="username">
 							</label><br>
 							<label>
-								<input type="password" class="campos" placeholder="Password"  name="senha">
+								<input type="password" class="campos" placeholder="Senha"  name="password">
 							</label> <br>
-								<input type="submit" class="btn fade_8S" name="login" value="Entrar">
+								<input type="button" class="btn fade_8S" name="login" value="Entrar" onClick="Login()">
 						</div>
+					
 						<img class="img_conteudo" src="conteudo.jpeg"></a>
 					</form>
 				</div> 	

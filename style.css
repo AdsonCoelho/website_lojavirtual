@@ -2,8 +2,13 @@
 *{
 	margin: 0;
 	padding: 0;
-
 }
+
+.menu{
+	width: 900px;
+	margin: auto;
+	text-align: center;
+  }
 
 .ctd_princ_esct_titulo{
   position:relative;
@@ -13,7 +18,7 @@
   height:70%;
   top:4em;
   margin: 10px auto;
-	text-align: justify;
+	text-align: center;
  }
 
 .ctd_princ_esct_subtitulo{
@@ -25,7 +30,6 @@
   top:5em;
   margin: 10px auto;
 	text-align: justify;
-
 }
 
 /*Imagem do conteúdo da página inicial*/
@@ -34,14 +38,11 @@
   left:30em;
   width:500px;
   height:800px;
-
 }
-
 
 .ctd_principal{
   background-color: rgb(253, 103, 208);
   margin: 15px;
-
 }
 
 .campos_login{
@@ -50,49 +51,32 @@
   top:12em;
   border:3px solid rgb(58, 52, 43) ;
   width:280px;
-  height:200px;
+  height:180px;
   font-size: 30px;
+  text-align: center;
+
 }
 
 .label_login
   {
     font-weight: bolder ;
     font-family: "Segoe UI","Arial","Times New Roman";
-    
   }
-
- 
 
 /*Imagem do rodapé*/
 
 .img_rodape
 {
   position:relative;
-  left:30em;
+  left:27em;
   width:100px; 
 }
 
 
-/** estilo para Div1 para a página sobre**/
+/*******************************************/
 
-#div1{
-  position:relative;
-  font-size: 16px;
-  left:3%;
-  top:3em;
-  width:90%;
-  height:150px;
-  border:1px solid rgb(58, 52, 43) ;
-  background-color: pink;
-}
+  /*Menu: Início/Produtos/Sobre/Carrinho*/
 
-.menu{
-	width: 900px;
-	margin: auto;
-	text-align: center;
-
-  /*Menu: Início/Produtos/Sobre/Contatos/Carrinho*/
-}
 .menu a{
 	color: rgb(255, 255, 255);
 	padding-right: 14px;
@@ -122,7 +106,9 @@
   background-color:#ffffff;
 }
 
-/**Área do field set, todo o fundo do fale conosco e Nome e Email.**/
+/**Área do field set, 
+***todo o fundo do fale conosco,
+***Nome e Email.*/
 fieldset
 {
   width:445px;
@@ -156,7 +142,6 @@ legend
   top:30px;
   width:250px;
 }
-
 #formulario input.campo_email
 {
   background-color:#ffffff;
@@ -180,6 +165,65 @@ legend
   position:absolute;
   bottom: 0.3em;
   right:40px;
-  background-color:#ffffff;
+  background-color:#444141;
 }
 
+/*************************/
+
+
+/** estilo para Div1 para a página sobre**/
+
+.menu_cbclho{
+	width: 900px;
+	margin: auto;
+	text-align: center;
+  }
+
+.menu_cbclho a
+{
+  color: rgb(255, 255, 255);
+	
+ 	font-size: 36px;
+	font-family: cursive;
+  position:relative;
+}
+
+.bory_sobre_cab{
+  background-color: rgb(253, 103, 208);
+  margin: 50px;
+}
+
+.ctd_princ_sobre_esct_titulo{
+position:relative;
+font-size: 36px;
+color: rgb(0, 0, 0); 
+width:80%;
+height:60%;
+top:2em;
+margin: 10px auto;
+text-align: justify;
+}
+
+.img_sobre{
+  position: relative;
+  left:20em;
+  width:350px;
+  height:350px;
+  top:3em;
+
+}
+
+/*************************/
+
+/** estilo para Div1 para a página vendedor**/
+
+/**Posição do formulário na página***/
+#formulario_vendedor
+{
+  position:relative;
+  left:30%;
+  top:5em;
+  width:350px;
+  height:350px;
+  background-color:rgb(128, 68, 0);
+}
